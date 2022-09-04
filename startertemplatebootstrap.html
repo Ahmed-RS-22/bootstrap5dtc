@@ -19,31 +19,32 @@
     </style>
    
     <title>home page</title>
+
   </head>
-  <body>
+  <body data-bs-spy="scroll" data-bs-target="#nav">
   <!--start nav-->  
-  <nav class="navbar navbar-expand-lg navbar-dark bg-light mynav position-sticky top-0">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-light mynav position-sticky top-0" id="nav">
     <div class="container">
       <a class="navbar-brand" href="#">LOGO</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <button class="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">ABOUT</a>
+            <a class="nav-link active" aria-current="page" href="#about">ABOUT</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">SERVICES</a>
+            <a class="nav-link" href="#services">SERVICES</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">PORTOFOLIO</a>
+            <a class="nav-link" href="#portofolio">PORTOFOLIO</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">PRICING</a>
+            <a class="nav-link" href="#pricing">PRICING</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">CONTACT</a>
+            <a class="nav-link" href="#contact">CONTACT</a>
           </li>
          
           
@@ -58,10 +59,10 @@
 
   <!--end nav-->  
   <!--start header-->  
-  <div class="container-fluid mycolor p-md-5 p-3 text-center">
+  <div class="container-fluid mycolor p-md-5 p-3 text-center" id="header">
       <h1 class="display-2">Company</h1>
       <p class="fs-5 p-3">  We specialize in blablabla</p>
-      <div class="input-group mb-3 w-50 mx-auto">
+      <div class="input-group mb-3 w-50 mx-auto dinput">
         <input type="text" class="form-control" placeholder="Email address" aria-label="Recipient's username" aria-describedby="button-addon2">
         <button class="btn btn-danger" type="button" id="button-addon2">Subscribe</button>
       </div>
@@ -80,8 +81,8 @@
           <p class="text-black-50">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
           <button class="btn btn-lg btn-outline-secondary"> Get In Touch</button>
         </div>
-        <div class="col-md-4 p-md-5"> 
-          <i class="fa-solid fa-chart-simple fa-10x mytextcolor "></i>
+        <div class="col-md-4 p-md-5  text-md-start text-center "> 
+          <i class="fa-solid fa-chart-simple fa-10x mytextcolor"></i>
         </div>
 
       </div>
@@ -91,8 +92,8 @@
     <!--start values--> 
     <div class="container-fluid p-md-5 p-3 bg-light" id="values">
       <div class="row">
-        <div class="col-md-4 p-md-5"> 
-          <i class="fa-solid fa-chart-simple fa-10x mytextcolor "></i>
+        <div class="col-md-4 p-md-5 text-md-start text-center"> 
+          <i class="fa-solid fa-earth-africa fa-10x mytextcolor "></i>
         </div>
         <div class="col-md-8"> 
           <h3>Our Values</h3>
@@ -201,7 +202,7 @@
            
             <div class="p-5">
              
-              <p class="fs-5 fst-italic">"This company is the best. I am so happy with the result!"<br>
+              <p class="fs-5 fst-italic carpar">"This company is the best. I am so happy with the result!"<br>
                 Michael Roe, Vice President, Comment Box</p>
             </div>
           </div>
@@ -209,7 +210,7 @@
          
             <div class="p-5">
               
-              <p class="fs-5 fst-italic">"One word... WOW!!"<br>
+              <p class="fs-5 fst-italic carpar">"One word... WOW!!"<br>
                 John Doe, Salesman, Rep Inc</p>
             </div>
           </div>
@@ -217,7 +218,7 @@
            
             <div class="p-5">
              
-              <p class="fs-5 fst-italic">"Could I... BE any more happy with this company?"<br>
+              <p class="fs-5 fst-italic carpar">"Could I... BE any more happy with this company?"<br>
                 Chandler Bing, Actor, FriendsAlot</p>
             </div>
           </div>
@@ -239,12 +240,12 @@
 
      <!--end portofolio--> 
     <!--start pricing--> 
-    <div class="container-fluid p-md-5 p-3 text-center bg-light" id="pricing">
+    <div class="container-fluid p-md-5 p-3 text-center " id="pricing">
       <h3 class="p-md-3">pricing</h3>
       <p>Choose a payment plan that works for you      </p>
 
       <div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
-        <div class="col">
+        <div class="col p-3">
           <div class="card mb-4 rounded-3 shadow-sm">
             <div class="card-header py-3 mycolor p-md-5 p-3">
               <h4 class="my-0 fw-normal">Basic</h4>
@@ -261,7 +262,7 @@
             </div>
           </div>
         </div>
-        <div class="col">
+        <div class="col p-3">
           <div class="card mb-4 rounded-3 shadow-sm">
             <div class="card-header py-3 mycolor p-md-5 p-3">
               <h4 class="my-0 fw-normal">Pro</h4>
@@ -278,7 +279,7 @@
             </div>
           </div>
         </div>
-        <div class="col">
+        <div class="col p-3">
           <div class="card mb-4 rounded-3 shadow-sm myborder ">
             <div class="card-header py-3 text-white bg-primary mycolor p-md-5 p-3">
               <h4 class="my-0 fw-normal">Premium
@@ -299,7 +300,51 @@
       </div>
     </div>
     <!--end pricing--> 
+    <!--start contact--> 
+    <div class="container-fluid p-md-5 p-3 bg-light" id="contact">
+      <h3 class="p-md-3 text-center">Contact</h3>
+      <div class="row">
+        <div class="col-md-5 p-md-5 p-3 text-muted">
+          <p>Contact us and we'll get back to you within 24 hours.          </p>
+          <p> <i class="fa-solid fa-location-dot"></i> Chicago, US          </p>
+          <p>  <i class="fa-solid fa-mobile-screen"></i> +00 1515151515          </p>
+          <p> <i class="fa-solid fa-envelope"></i> myemail@something.com</p>
 
+        </div>
+        <div class="col-md-7 p-md-5 p-3 text-muted">
+
+          <form>
+            
+            <div class="mb-3 row ">
+              <div class="col">
+                <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="name">
+              </div>
+              <div class="col">
+                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="email">
+              </div>
+             
+            </div>
+           
+            <div class="mb-3">
+              <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"> comment</textarea>
+            </div>
+            <button class="btn btn-outline-secondary float-end"> Send </button>
+          </form>
+
+          
+        </div>
+
+      </div>
+
+
+    </div>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3418.454876082563!2d31.361773885530056!3d31.04143407774138!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14f79dd401e46d55%3A0xc77bf9230555c6a!2z2YXYsdmD2LIg2KfZhNiq2K_YsdmK2Kgg2KfZhNix2YLZhdmJICjYp9mE2K3Ys9in2Kgg2KfZhNi52YTZhdmKINiz2KfYqNmC2KcpIC0g2KzYp9mF2LnYqSDYp9mE2YXZhti12YjYsdip!5e0!3m2!1sar!2seg!4v1662284980419!5m2!1sar!2seg" width="100%" height="460px" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+    <footer class="container-fluid p-md-5 p-3 text-center ">
+          <a class="mytextcolor text-decoration-none" href="#header"><i class="fa-solid fa-arrow-up d-block p-md-4 p-2"></i></a>
+          Bootstrap Theme Made By <a class="text-decoration-none">www.w3schools.com</a>
+    </footer>
+    <!--end contact--> 
 
     <script src="js/bootstrap.bundle.min.js"></script>
     

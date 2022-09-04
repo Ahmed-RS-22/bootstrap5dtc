@@ -6,7 +6,9 @@
 :root{
     --color1:#F4511E;
 }
-
+body {
+    position: relative;
+  }
 /*start nav*/
 .mynav{
     background-color: var(--color1)!important;
@@ -25,6 +27,10 @@
 
 }
 .nav-link:hover{
+    background-color: white!important;
+    color:var(--color1)!important;
+}
+.navbar .active{
     background-color: white!important;
     color:var(--color1)!important;
 }
@@ -59,4 +65,25 @@
 }
 .card{
     border:1px solid var(--color1)!important;
+}
+#pricing .card:hover{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)!important;
+
+}
+@media screen and (max-width:767px){
+   
+.container, .container-sm {
+padding: 0px;
+max-width: 100%;
+}
+.navbar-toggler {
+margin-right: 1rem;
+}
+.dinput{
+    width: 80%!important;
+}
+.carpar{
+
+    font-size: 0.9rem!important;
+}
 }
